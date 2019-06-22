@@ -1,0 +1,97 @@
+get_gitBranch() {
+
+  local branchName=""
+
+  # check if the current directory is in a git repository
+  if [ $(git rev-parse --is-inside-work-tree &>/dev/null; printf "%s" $?) == 0 ]; then
+
+    # get the short symbolic ref
+    # if HEAD isn't a symbolic ref, get the short SHA
+    # otherwise, just give up
+    branchName="$(git symbolic-ref --quiet --short HEAD 2> /dev/null || \
+                  git rev-parse --short HEAD 2> /dev/null || \
+                  printf "(unknown)")"
+
+    printf "%s" "$branchName "
+
+  else
+    return
+  fi
+
+}
+
+
+get_gitDifferences() {
+
+  local s=""
+
+  # check if the current directory is in a git repository
+  if [ $(git rev-parse --is-inside-work-tree &>/dev/null; printf "%s" $?) == 0 ]; then
+
+    # check if the current directory is in .git before running git checks
+    if [ "$(git rev-parse --is-inside-git-dir 2> /dev/null)" == "false" ]; then
+
+        # ensure index is up to date
+        git update-index --really-refresh  -q &>/dev/null
+
+        # check for uncommitted changes in the index
+        if ! $(git diff --quiet --ignore-submodules --cached); then
+            s="$s+";
+        fi
+
+        # check for unstaged changes
+        if ! $(git diff-files --quiet --ignore-submodules --); then
+            s="$s!";
+        fi
+
+        # check for untracked files
+        if [ -n "$(git ls-files --others --exclude-standard)" ]; then
+            s="$s?";
+        fi
+
+        # check for stashed files
+        if $(git rev-parse --verify refs/stash &>/dev/null); then
+            s="$s$";
+        fi
+
+    fi
+
+    [ -n "$s" ] && s="$s"
+    printf "%s" "$s"
+
+  else
+    return
+  fi
+
+}
+
+
+
+set_prompts() {
+
+  local NONE="\[\033[0m\]"         # unsets colour to term's fg colour
+
+  # regular colors
+  local R="\[\033[0;31m\]"         # red
+  local G="\[\033[0;32m\]"         # green
+  local B="\[\033[0;34m\]"         # blue
+  local C="\[\033[0;36m\]"         # cyan
+  local Y="\[\033[0;33m\]"         # yellow
+  local M="\[\033[0;35m\]"         # magenta
+  local K="\[\033[0;30m\]"         # black
+  local W="\[\033[0;37m\]"         # white
+  local S="\[\033[1;30m\]"         # grey
+
+
+  # build promt string
+  PS1="$S[\A] "                    # timestamp
+  PS1+="$W\W "                     # current directory
+  PS1+="$R\$(get_gitDifferences)"  # GIT status
+  PS1+="$G\$(get_gitBranch)"       # GIT branch
+  PS1+="${NONE}"                   # reset colour
+  export PS1
+
+}
+
+set_prompts
+unset set_prompts

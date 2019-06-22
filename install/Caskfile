@@ -1,0 +1,26 @@
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+
+
+cask 'ampps'
+cask 'atom'
+cask 'buttercup'
+cask 'caffeine'
+cask 'codekit'
+cask 'discord'
+cask 'dropbox'
+cask 'firefox'
+cask "font-fira-code"
+cask 'fork'
+cask 'forklift'
+cask 'google-chrome'
+cask 'ifunbox'
+cask 'impactor'
+cask 'nextcloud'
+cask 'microsoft-office'
+cask 'spotify'
+cask 'telegram-desktop'
+cask 'typeface'
+cask 'whatsapp'

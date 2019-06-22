@@ -1,0 +1,26 @@
+"*":
+  core:
+    allowPendingPaneItems: false
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "ide-typescript"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "city-lights-ui"
+      "city-lights-syntax"
+    ]
+    titleBar: "custom"
+  editor:
+    fontFamily: "'FiraCode-Retina', monospace"
+    preferredLineLength: 130
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "89833753-d7ae-453f-9f6d-2af292cd8c09"
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
