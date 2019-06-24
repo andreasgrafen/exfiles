@@ -2,9 +2,6 @@
   core:
     allowPendingPaneItems: false
     closeDeletedFileTabs: true
-    disabledPackages: [
-      "ide-typescript"
-    ]
     telemetryConsent: "limited"
     themes: [
       "city-lights-ui"

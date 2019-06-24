@@ -6,6 +6,7 @@ city-lights-ui
 editorconfig
 emmet
 file-icons
+highlight-selected
 ide-php
 language-pug
 language-vue
