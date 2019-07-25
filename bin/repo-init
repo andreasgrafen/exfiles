@@ -1,7 +1,7 @@
 #!/bin/bash
 
 GL_API_TOKEN='DdgimdyXD9Xr_byDBojj'
-GH_USER='andreasgrafen'
+GL_USER='andreasgrafen'
 NEW_REPO_NAME=$1
 CURRENT_DIR=$PWD
 PROJECT_DIR=${2:-$CURRENT_DIR}
@@ -10,4 +10,4 @@ test -z $NEW_REPO_NAME && echo "Repo name required." 1>&2 && exit 1
 
 curl -H "Content-Type:application/json" https://gitlab.unseen.ninja/api/v4/projects?private_token=$GL_API_TOKEN -d "{ \"name\": \"$NEW_REPO_NAME\" }"
 git init $PROJECT_DIR
-git -C $PROJECT_DIR remote add origin git@gitlab.unseen.ninja:$GH_USEr/$NEW_REPO_NAME.git
+git -C $PROJECT_DIR remote add origin git@gitlab.unseen.ninja:$GL_USER/$NEW_REPO_NAME.git
