@@ -1,7 +1,6 @@
 #!/bin/bash
 
-GL_API_TOKEN='DdgimdyXD9Xr_byDBojj'
-GL_USER='andreasgrafen'
+source ~/.extra/remote-repo.config.sh
 NEW_REPO_NAME=$1
 CURRENT_DIR=$PWD
 PROJECT_DIR=${2:-$CURRENT_DIR}
