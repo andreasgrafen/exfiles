@@ -6,6 +6,7 @@ alias cpwd="pwd|tr -d '\n'|pbcopy"
 # Shortcuts
 alias gg="$DOTFILES_GIT_GUI"
 alias cask="brew cask"
+alias py="python3"
 alias chrome="open -a ~/Applications/Google\ Chrome.app"
 alias firefox="open -a ~/Applications/Firefox.app"
 alias dl='cd ~/Downloads'
