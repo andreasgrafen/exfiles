@@ -85,7 +85,9 @@ set_prompts() {
 
   # build promt string
   PS1="$S[\A] "                    # timestamp
-  PS1+="$C\u "                     # username
+  PS1+="$C\u"                      # username
+  PS1+="$S@"                       # @
+  PS1+="$W\h "                      # host
   PS1+="$W\W "                     # current directory
   PS1+="$R\$(get_gitDifferences)"  # GIT status
   PS1+="$G\$(get_gitBranch)"       # GIT branch
