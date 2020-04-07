@@ -11,7 +11,6 @@ dockutil --no-restart --add "/Applications/Spotify.app"
 dockutil --no-restart --add "/Applications/Typeface.app"
 dockutil --no-restart --add "/Applications/Fork.app"
 dockutil --no-restart --add "/Applications/Visual Studio Code.app"
-dockutil --no-restart --add "/Applications/Typeface.app"
 dockutil --no-restart --add "/Applications/Buttercup.app"
 dockutil --no-restart --add "/Applications/Utilities/Terminal.app"
 
