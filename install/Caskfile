@@ -6,7 +6,6 @@ tap "dteoh/sqa"
 
 
 cask "ampps"
-cask "atom"
 cask "buttercup"
 cask "caffeine"
 cask "codekit"
@@ -25,3 +24,4 @@ cask "slowquitapps"
 cask "spotify"
 cask "telegram-desktop"
 cask "typeface"
+cask "visual-studio-code"

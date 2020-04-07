@@ -2,7 +2,7 @@
 
 dockutil --no-restart --remove all
 dockutil --no-restart --add "/Applications/Forklift.app"
-dockutil --no-restart --add "/Applications/Microsoft Outlook.app"
+dockutil --no-restart --add "/Applications/Spark.app"
 dockutil --no-restart --add "/Applications/Microsoft Word.app"
 dockutil --no-restart --add "/Applications/CodeKit.app"
 dockutil --no-restart --add "/Applications/Firefox.app"
