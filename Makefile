@@ -67,7 +67,7 @@ brew-packages: brew
 
 cask-apps: brew
 	brew bundle --file=$(DOTFILES_DIR)/install/Caskfile
-	for EXT in $$(cat install/Codefile); do apm install $$EXT; done
+	for EXT in $$(cat install/Codefile); do code --install-extension $$EXT; done
 
 node-packages: npm
 	. $(NVM_DIR)/nvm.sh; npm install -g $(shell cat install/npmfile)
