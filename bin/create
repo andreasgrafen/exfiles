@@ -1,0 +1,52 @@
+# !/bin/bash
+
+
+# SET VARIABLES
+# =============
+
+source ~/.extra/remote-repo.config.sh
+
+PROJECT_NAME=$1
+CURRENT_DIR=$PWD
+PROJECT_DIR=${2:-$CURRENT_DIR}/$PROJECT_NAME
+
+
+
+# CHECK FOR REQUIRED VARIABLES
+# ============================
+
+test -z $PROJECT_NAME && echo "Please specify a name." 1>&2 && exit 1
+
+
+
+# SETUP DEFAULTS
+# ==============
+
+mkdir $PROJECT_NAME
+cd $PROJECT_NAME
+
+touch README.md
+echo "# $PROJECT_NAME" > README.md
+
+cp ~/.dotfiles/project-defaults/LICENSE .
+cp ~/.dotfiles/project-defaults/.gitignore .
+cp ~/.dotfiles/project-defaults/.editorconfig .
+cp ~/.dotfiles/project-defaults/.gitlab-ci.yml .
+
+
+
+# CREATE REPO ON GITLAB
+# =====================
+
+curl -H "Content-Type:application/json" https://gitlab.unseen.ninja/api/v4/projects?private_token=$GL_API_TOKEN -d "{ \"name\": \"$PROJECT_NAME\" }"
+git init $PROJECT_DIR
+git -C $PROJECT_DIR remote add origin git@gitlab.unseen.ninja:$GL_USER/$PROJECT_NAME.git
+
+
+
+# ADD, COMMIT AND PUSH
+# ====================
+
+git add .
+git commit -m "initial"
+git push -u origin master

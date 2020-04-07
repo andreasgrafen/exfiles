@@ -1,0 +1,14 @@
+stages:
+- demo
+
+
+
+# Change this file to use CI
+# ==========================
+
+demoStage:
+
+  stage: demo
+
+  script:
+  - echo "Hello World"
