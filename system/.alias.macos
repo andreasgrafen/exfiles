@@ -1,6 +1,12 @@
 # general
 alias rtmp='rm -rf ~/tmp; mkdir ~/tmp'
 alias cpwd="pwd|tr -d '\n'|pbcopy"
+function websetup(){
+  cp -R ~/.dotfiles/project-defaults/web/* .
+  echo ""
+  echo -e "\033[0;31mRemember to edit the package.json!"
+  echo ""
+}
 function countdown(){
    date1=$((`date +%s` + ($1 * 60)));
    while [ "$date1" -ge `date +%s` ]; do

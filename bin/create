@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/usr/bin/env bash
 
 
 # SET VARIABLES
@@ -28,10 +28,10 @@ cd $PROJECT_NAME
 touch README.md
 echo "# $PROJECT_NAME" > README.md
 
-cp ~/.dotfiles/project-defaults/LICENSE .
-cp ~/.dotfiles/project-defaults/.gitignore .
-cp ~/.dotfiles/project-defaults/.editorconfig .
-cp ~/.dotfiles/project-defaults/.gitlab-ci.yml .
+cp ~/.dotfiles/project-defaults/all/LICENSE .
+cp ~/.dotfiles/project-defaults/all/.gitignore .
+cp ~/.dotfiles/project-defaults/all/.editorconfig .
+cp ~/.dotfiles/project-defaults/all/.gitlab-ci.yml .
 
 
 
