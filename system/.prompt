@@ -90,7 +90,6 @@ set_prompts() {
   local FSR="\033[21m"
 
   local TRIANGLE=$'\uE0B0'
-  local BRANCH=$'\ue0a0'
 
   # build promt string
   PS1="\n"                         # newline
