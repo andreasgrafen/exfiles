@@ -76,7 +76,7 @@ alias cpu="sysctl -n machdep.cpu.brand_string"
 alias pbtext="pbpaste | textutil -convert txt -stdin -stdout -encoding 30 | pbcopy"
 alias pbspaces="pbpaste | expand | pbcopy"
 alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
-alias sysupdate='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; brew doctor; npm install npm -g; npm update -g'
+alias sysupdate='sudo softwareupdate -i -a; mas upgrade; brew update; brew upgrade; brew cleanup; brew doctor; npm install npm -g; npm update -g'
 
 
 # fun stuff
