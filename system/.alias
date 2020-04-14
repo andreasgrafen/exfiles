@@ -6,13 +6,6 @@ alias ping='ping -c 5'
 alias c='clear'
 alias rr="rm -rf"
 alias hg='history | grep --color="auto"'
-function search(){
-  find . -print | grep -i $1
-}
-function mkcd(){
-  mkdir $1
-  cd $1
-}
 
 
 # Directory listing/traversal

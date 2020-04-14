@@ -1,6 +1,6 @@
 # Create a new directory and enter it
 
-mk() {
+mkcd() {
   mkdir -p "$@" && cd "$@"
 }
 

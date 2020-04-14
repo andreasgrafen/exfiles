@@ -55,3 +55,10 @@ meteo() {
 md() {
   pandoc $1 | lynx -stdin -dump
 }
+
+
+# search files with a given name
+
+function search(){
+  find . -print | grep -i $1
+}
