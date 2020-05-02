@@ -8,7 +8,6 @@ sub_help () {
   echo "Usage: $BIN_NAME <command>"
   echo
   echo "Commands:"
-  echo "   atom             Install Atom config"
   echo "   clean            Clean up caches (brew, nvm, gem)"
   echo "   dock             Apply macOS Dock settings"
   echo "   edit             Open dotfiles in IDE ($DOTFILES_IDE) and Git GUI ($DOTFILES_GIT_GUI)"
@@ -52,10 +51,6 @@ sub_macos () {
 
 sub_dock () {
   . "${DOTFILES_DIR}/macos/dock.sh" && echo "Dock reloaded."
-}
-
-sub_atom () {
-  cp ${DOTFILES_DIR}/atom/* ~/.atom/
 }
 
 case $COMMAND_NAME in
