@@ -28,11 +28,6 @@ cd $PROJECT_NAME
 touch README.md
 echo "# $PROJECT_NAME" > README.md
 
-cp ~/.dotfiles/project-defaults/all/LICENSE .
-cp ~/.dotfiles/project-defaults/all/.gitignore .
-cp ~/.dotfiles/project-defaults/all/.editorconfig .
-cp ~/.dotfiles/project-defaults/all/.gitlab-ci.yml .
-
 
 
 # CREATE REPO ON GITLAB
