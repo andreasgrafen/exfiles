@@ -11,6 +11,7 @@ sub_help () {
   echo "   clean            Clean up caches (brew, nvm, gem)"
   echo "   dock             Apply macOS Dock settings"
   echo "   edit             Open dotfiles in IDE ($DOTFILES_IDE) and Git GUI ($DOTFILES_GIT_GUI)"
+  echo "   editorconfig     Symlink .editorconfig"
   echo "   help             This help message"
   echo "   macos            Apply macOS system defaults"
   echo "   test             Run tests"
@@ -20,6 +21,10 @@ sub_help () {
 sub_edit () {
   sh -c "$DOTFILES_IDE $DOTFILES_DIR"
   sh -c "$DOTFILES_GIT_GUI $DOTFILES_DIR"
+}
+
+sub_editorconfig () {
+  ln -s ~/.dotfiles/config/.editorconfig ~/
 }
 
 sub_test () {
