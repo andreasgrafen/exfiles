@@ -4,6 +4,10 @@ mkcd() {
   mkdir -p "$@" && cd "$@"
 }
 
+mktir() {
+  mkdir -p "`date +%Y%m%d`-$@"
+}
+
 # Fuzzy find file/dir
 
 ff() { find . -type f -iname "*$1*";}
