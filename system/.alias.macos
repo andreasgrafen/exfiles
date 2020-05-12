@@ -82,3 +82,11 @@ alias sysupdate='sudo softwareupdate -i -a; mas upgrade; brew update; brew upgra
 # fun stuff
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume output volume 100'"
+
+
+# Programs
+alias firefox="open /Applications/Firefox.app/"
+alias ff="open /Applications/Firefox.app/"
+alias discord="open /Applications/Discord.app/"
+alias photoshop="open /Applications/Adobe\ Photoshop\ 2020/Adobe\ Photoshop\ 2020.app/"
+alias ps="open /Applications/Adobe\ Photoshop\ 2020/Adobe\ Photoshop\ 2020.app/"
