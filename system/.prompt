@@ -83,7 +83,7 @@ set_prompts() {
   local S="\[\033[1;30m\]"         # grey
 
   local BW="\[\033[107m\]"
-  local BC="\[\033[46m\]"
+  local BR="\[\033[41m\]"
   local BX="\[\033[49m\]"
 
   local FSB="\[\033[1m\]"
@@ -93,8 +93,8 @@ set_prompts() {
 
   # build promt string
   PS1=""                         # newline
-  PS1+="$W$BC $FSB[\A]$FSR $BX"    # timestamp
-  PS1+="$C$BW$TRIANGLE "           # seperator
+  PS1+="$W$BR $FSB[\A]$FSR $BX"    # timestamp
+  PS1+="$R$BW$TRIANGLE "           # seperator
   PS1+="$S$BW\u"                   # username
   PS1+="$S$BW@"                    # @
   PS1+="$S$BW\h $BX "              # host
