@@ -42,6 +42,8 @@ alias ncd="npm-check -su"
 
 # git
 alias clone='git clone $1'
+alias gc='git commit -m'
+alias ga='git add .'
 alias ch='history | grep --color="auto" "git commit"'
 
 
