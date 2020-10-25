@@ -82,6 +82,7 @@ alias sysupdate='sudo softwareupdate -i -a; mas upgrade; brew update; brew upgra
 # fun stuff
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume output volume 100'"
+alias genpass="genpass.py -s | pbcopy"
 
 
 # Programs
