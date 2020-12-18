@@ -1,5 +1,4 @@
 # general
-alias rtmp='rm -rf ~/tmp; mkdir ~/tmp'
 alias cpwd="pwd|tr -d '\n'|pbcopy"
 function websetup(){
   cp -R ~/.dotfiles/project-defaults/web/* .
@@ -23,15 +22,6 @@ alias cask="brew cask"
 alias py="python3"
 alias chrome="open -a ~/Applications/Google\ Chrome.app"
 alias firefox="open -a ~/Applications/Firefox.app"
-alias dl='cd ~/Downloads'
-alias dt='cd ~/Desktop'
-alias d='cd ~/Development'
-alias p='cd ~/Projects'
-alias r='cd ~/Resources'
-alias web='cd ~/Development/Web'
-alias nd='cd ~/Development/Node'
-alias wag='cd ~/Development/Web/Sites/grafen.info'
-alias wninja='cd ~/Development/Web/Sites/unseen.ninja'
 
 
 # Exclude macOS specific files in ZIP archives

@@ -2,6 +2,7 @@
 alias _="sudo"
 alias reload='exec ${SHELL} -l'
 alias mkdir='mkdir -pv'
+alias rtmp='rm -rf ~/tmp; mkdir ~/tmp'
 alias ping='ping -c 5'
 alias c='clear'
 alias rr="rm -rf"
