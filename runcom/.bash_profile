@@ -33,6 +33,10 @@ if is-macos; then
   done
 fi
 
+# Set autocd
+
+shopt -s autocd
+
 # Set LSCOLORS
 
 eval "$(dircolors -b "$DOTFILES_DIR"/system/.dir_colors)"
