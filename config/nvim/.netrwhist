@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/Users/ag/.config/alacritty'
+let g:netrw_dirhist_5='/Users/ag/.config'
+let g:netrw_dirhist_4='/Users/ag'
+let g:netrw_dirhist_3='/Users/ag/.dotfiles'
+let g:netrw_dirhist_2='/Users/ag/Development/Web/Sites/grafen.info/personal-website/dev/scss/base'
+let g:netrw_dirhist_1='/Users/ag/Development/Web'
