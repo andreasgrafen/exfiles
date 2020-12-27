@@ -111,7 +111,7 @@ set_prompts() {
   PS1+="$C\u "
   PS1+="$W$ARRR "
   PS1+="$W\W "
-  PS1+="$R\$(get_gitDifferences)"
+  PS1+="$M\$(get_gitDifferences)"
   PS1+="$G\$(get_gitBranch)"
   PS1+="$W$ARRR$C$ARRR$G$ARRR "
   PS1+="${NONE}"
