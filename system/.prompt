@@ -89,20 +89,34 @@ set_prompts() {
   local FSB="\[\033[1m\]"
   local FSR="\[\033[21m\]"
 
-  local TRIANGLE=$'\uE0B0'
+  # local TRIANGLE=$'\uE0B0'
+  local ARRR=$'\u276F'
+  local ARRL=$'\u276E'
 
   # build promt string
-  PS1=""                         # newline
-  PS1+="$W$BR $FSB[\A]$FSR $BX"    # timestamp
-  PS1+="$R$BW$TRIANGLE "           # seperator
-  PS1+="$S$BW\u"                   # username
-  PS1+="$S$BW@"                    # @
-  PS1+="$S$BW\h $BX "              # host
-  PS1+="$W\W "                     # current directory
-  PS1+="$R\$(get_gitDifferences)"  # GIT status
-  PS1+="$G\$(get_gitBranch)"       # GIT branch
-  PS1+="${NONE}"                   # reset colour
+  # PS1=""                           # newline
+  # PS1+="$W$BR $FSB[\A]$FSR $BX"    # timestamp
+  # PS1+="$R$BW$TRIANGLE "           # seperator
+  # PS1+="$S$BW\u"                   # username
+  # PS1+="$S$BW@"                    # @
+  # PS1+="$S$BW\h $BX "              # host
+  # PS1+="$W\W "                     # current directory
+  # PS1+="$R\$(get_gitDifferences)"  # GIT status
+  # PS1+="$G\$(get_gitBranch)"       # GIT branch
+  # PS1+="${NONE}"                   # reset colour
+  # export PS1
+
+  PS1=""
+  #PS1+="$W$ARRL "
+  PS1+="$C\u "
+  PS1+="$W$ARRR "
+  PS1+="$W\W "
+  PS1+="$R\$(get_gitDifferences)"
+  PS1+="$G\$(get_gitBranch)"
+  PS1+="$W$ARRR$C$ARRR$G$ARRR "
+  PS1+="${NONE}"
   export PS1
+
 
 }
 
