@@ -1,5 +1,7 @@
 # general
 alias cpwd="pwd|tr -d '\n'|pbcopy"
+alias vi="nvim"
+alias vim="nvim"
 function websetup(){
   cp -R ~/.dotfiles/project-defaults/web/* .
   echo ""
