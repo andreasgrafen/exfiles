@@ -1,13 +1,15 @@
 set statusline=
-set statusline+=%#DiffAdd#
+set statusline+=%#DiffText#
 set statusline+=\ %M
+set statusline+=\ %#Visual#
 set statusline+=\ %y
 set statusline+=\  
-set statusline+=%#SpellLocal#
+set statusline+=%#PmenuSbar#
 set statusline+=\ %F
 set statusline+=\  
-set statusline+=%#PmenuSel#
+set statusline+=%#Title#
 set statusline+=%=
-set statusline+=%#SpellLocal#
+set statusline+=%#Visual#
 set statusline+=\ %c:%l/%L
-set statusline+=\ [%n]\  
+set statusline+=\ [%n]
+set statusline+=\ %#DiffText#\  

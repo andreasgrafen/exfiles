@@ -13,7 +13,7 @@ set smartcase
 set noswapfile
 set cursorline
 
-hi CursorLine cterm=NONE ctermbg=60 ctermfg=White
+colorscheme nord
 
 
 " K E Y B I N D S
@@ -54,7 +54,6 @@ function! s:goyo_enter()
   set noshowmode
   set noshowcmd
   set scrolloff=999
-  hi CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE
   Limelight
 endfunction
 
@@ -62,7 +61,6 @@ function! s:goyo_leave()
   set showmode
   set showcmd
   set scrolloff=5
-  hi CursorLine cterm=NONE ctermbg=60 ctermfg=White
   Limelight!
 endfunction
 
