@@ -12,7 +12,9 @@ set nowrap
 set smartcase
 set noswapfile
 set cursorline
+set rnu
 
+set termguicolors
 colorscheme nord
 
 
@@ -50,22 +52,8 @@ nnoremap <C-l> <C-w>l
 
 map <ENTER> :Goyo<CR>
 
-function! s:goyo_enter()
-  set noshowmode
-  set noshowcmd
-  set scrolloff=999
-  Limelight
-endfunction
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
 
-function! s:goyo_leave()
-  set showmode
-  set showcmd
-  set scrolloff=5
-  Limelight!
-endfunction
-
-autocmd! User GoyoEnter nested call <SID>goyo_enter()
-autocmd! User GoyoLeave nested call <SID>goyo_leave()
-
-let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
+let g:limelight_conceal_guifg = '#4C566A'
