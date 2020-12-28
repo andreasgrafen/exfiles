@@ -87,16 +87,18 @@ cursor:
   # _ Underline
   # | Beam
   style: Underline
+  vi_mode_style: Block
 
 
 
 key_bindings:
--  {  key:  N,   mods:  Command,    action:  SpawnNewInstance  }
--  {  key:  28,  mods:  Alt,        chars:   "{"               }
--  {  key:  25,  mods:  Alt,        chars:   "}"               }
--  {  key:  37,  mods:  Alt,        chars:   "@"               }
--  {  key:  26,  mods:  Alt|Shift,  chars:   "\\"              }
--  {  key:  26,  mods:  Alt,        chars:   "|"               }
--  {  key:  45,  mods:  Alt,        chars:   "~"               }
--  {  key:  23,  mods:  Alt,        chars:   "["               }
--  {  key:  22,  mods:  Alt,        chars:   "]"               }
+-  {  key:  N,      mods:  Command,    action:  SpawnNewInstance  }
+-  {  key:  Space,  mods:  Control,    action:  ToggleViMode      }
+-  {  key:  28,     mods:  Alt,        chars:   "{"               }
+-  {  key:  25,     mods:  Alt,        chars:   "}"               }
+-  {  key:  37,     mods:  Alt,        chars:   "@"               }
+-  {  key:  26,     mods:  Alt|Shift,  chars:   "\\"              }
+-  {  key:  26,     mods:  Alt,        chars:   "|"               }
+-  {  key:  45,     mods:  Alt,        chars:   "~"               }
+-  {  key:  23,     mods:  Alt,        chars:   "["               }
+-  {  key:  22,     mods:  Alt,        chars:   "]"               }
