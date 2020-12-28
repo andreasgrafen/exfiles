@@ -1,5 +1,6 @@
 # general
 alias _="sudo"
+alias please="sudo"
 alias reload='exec ${SHELL} -l'
 alias mkdir='mkdir -pv'
 alias rtmp='rm -rf ~/tmp; mkdir ~/tmp'
