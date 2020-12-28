@@ -1,5 +1,8 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+  " Editor Config
+  Plug 'editorconfig/editorconfig-vim'
+
   " Auto Bracket Pairs
   Plug 'jiangmiao/auto-pairs'
 
