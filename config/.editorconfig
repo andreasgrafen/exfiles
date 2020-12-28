@@ -22,3 +22,6 @@ indent_style = tab
 
 [Makefile]
 indent_style = tab
+
+[*.vim]
+trim_trailing_whitespace = false
