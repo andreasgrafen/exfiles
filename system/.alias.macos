@@ -20,10 +20,8 @@ function countdown(){
 
 # Shortcuts
 alias gg="$DOTFILES_GIT_GUI"
-alias cask="brew cask"
+alias cask="brew install --cask"
 alias py="python3"
-alias chrome="open -a ~/Applications/Google\ Chrome.app"
-alias firefox="open -a ~/Applications/Firefox.app"
 
 
 # Exclude macOS specific files in ZIP archives
@@ -78,8 +76,5 @@ alias genpass="genpass.py -s | pbcopy"
 
 
 # Programs
-alias firefox="open /Applications/Firefox.app/"
-alias ff="open /Applications/Firefox.app/"
-alias discord="open /Applications/Discord.app/"
-alias photoshop="open /Applications/Adobe\ Photoshop\ 2020/Adobe\ Photoshop\ 2020.app/"
-alias ps="open /Applications/Adobe\ Photoshop\ 2020/Adobe\ Photoshop\ 2020.app/"
+alias firefox="open -a /Applications/Firefox.app/"
+alias chrome="open -a /Applications/Google\ Chrome.app"
