@@ -6,6 +6,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Auto Bracket Pairs
   Plug 'jiangmiao/auto-pairs'
 
+  " Auto Completion
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+  " Language Support
+
   " Zen Mode
   Plug 'junegunn/goyo.vim'
   Plug 'junegunn/limelight.vim'

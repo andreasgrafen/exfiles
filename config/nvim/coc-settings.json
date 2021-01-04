@@ -1,0 +1,12 @@
+{
+
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+
+  "snippets.ultisnips.directories":
+  [
+    "UltiSnips",
+    "~/.config/nvim/snippets"
+  ]
+
+}
