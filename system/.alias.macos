@@ -1,13 +1,5 @@
 # general
 alias cpwd="pwd|tr -d '\n'|pbcopy"
-alias vi="nvim"
-alias vim="nvim"
-function websetup(){
-  cp -R ~/.dotfiles/project-defaults/web/* .
-  echo ""
-  echo -e "\033[0;31mRemember to edit the package.json!"
-  echo ""
-}
 function countdown(){
    date1=$((`date +%s` + ($1 * 60)));
    while [ "$date1" -ge `date +%s` ]; do
@@ -19,8 +11,6 @@ function countdown(){
 
 
 # Shortcuts
-alias gg="$DOTFILES_GIT_GUI"
-alias cask="brew install --cask"
 alias py="python3"
 
 

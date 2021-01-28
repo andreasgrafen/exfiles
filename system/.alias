@@ -6,8 +6,11 @@ alias mkdir='mkdir -pv'
 alias rtmp='rm -rf ~/tmp; mkdir ~/tmp'
 alias ping='ping -c 5'
 alias c='clear'
+alias ca='cd ~; clear'
 alias rr="rm -rf"
 alias hg='history | grep --color="auto"'
+alias vi='nvim'
+alias vim='nvim'
 
 
 # Directory listing/traversal
@@ -25,9 +28,6 @@ unset LS_COLORS LS_TIMESTYLEISO LS_GROUPDIRSFIRST
 alias ~='cd ~'
 alias cs='cd'
 alias ..='cd ..'
-alias ..2='cd ../..'
-alias ..3='cd ../../..'
-alias ..4='cd ../../../..'
 alias tree="tree -A"
 alias treed="tree -d"
 alias tree1="tree -d -L 1"
