@@ -1,0 +1,9 @@
+cmd + shift - up : yabai -m window --focus north
+cmd + shift - down : yabai -m window --focus south
+cmd + shift - left : yabai -m window --focus west
+cmd + shift - right : yabai -m window --focus east
+
+cmd + ctrl - up : yabai -m window --swap north
+cmd + ctrl - down : yabai -m window --swap south
+cmd + ctrl - left : yabai -m window --swap west
+cmd + ctrl - right : yabai -m window --swap east
