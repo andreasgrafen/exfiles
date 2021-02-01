@@ -7,3 +7,5 @@ cmd + ctrl - k : yabai -m window --swap north
 cmd + ctrl - j : yabai -m window --swap south
 cmd + ctrl - h : yabai -m window --swap west
 cmd + ctrl - l : yabai -m window --swap east
+
+cmd - t : alacritty
