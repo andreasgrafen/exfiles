@@ -8,4 +8,4 @@ cmd + ctrl - j : yabai -m window --swap south
 cmd + ctrl - h : yabai -m window --swap west
 cmd + ctrl - l : yabai -m window --swap east
 
-cmd - t : alacritty
+cmd + ctrl - t : alacritty
