@@ -20,6 +20,7 @@ fi
 # Make utilities available
 
 PATH="$DOTFILES_DIR/bin:$PATH"
+export GPG_TTY=$(tty)
 
 # Source the dotfiles (order matters)
 

@@ -1,13 +1,14 @@
 [user]
 	name = Andreas Grafen
 	email = andreas@grafen.info
+	signingkey = 9D7DDCF3DE26A0F3
 
 [github]
   user = andreasgrafen
 
 [core]
   excludesfile = ~/.config/git/ignore
-  editor = nano
+  editor = nvim
   filemode = false
   trustctime = false
   autocrlf = input
@@ -104,5 +105,7 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[pull]
-	ff = only
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
