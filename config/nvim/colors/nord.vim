@@ -772,3 +772,6 @@ hi! link VimwikiList markdownListMarker
 " YAML
 " > stephpy/vim-yaml
 call s:hi("yamlKey", s:nord7_gui, "", s:nord7_term, "", "", "")
+
+" force background to be transparent
+hi Normal guibg=NONE ctermbg=NONE

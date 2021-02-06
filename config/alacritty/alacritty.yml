@@ -8,7 +8,7 @@ window:
     y: 30
   dynamic_padding: false
   decorations: buttonless
-background_opacity: 1
+background_opacity: 0.9
 
 scrolling:
   history: 1000
