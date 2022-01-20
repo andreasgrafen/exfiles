@@ -1,0 +1,77 @@
+#!/usr/bin/env python3
+
+import argparse
+import random
+from subprocess import run
+
+# Define a dictionary of all the flags and their colors
+# Each color is the color for an individual row in the flag
+flags = {
+    'straight': [233, 255, 233, 255, 233],
+    'gay': [196, 208, 226, 28, 20, 90],
+    'bisexual': [198, 198, 97, 25, 25],
+    'lesbian': [202, 209, 255, 255, 168, 161],
+    'pansexual': [198, 198, 220, 220, 39, 39],
+    'trans': [81, 211, 255, 211, 81],
+    'nonbinary': [226, 226, 255, 255, 98, 98, 237, 237],
+    'demiboy': [244, 249, 117, 255, 117, 249, 244],
+    'demigirl': [244, 249, 218, 255, 218, 249, 244],
+    'genderfluid': [211, 255, 128, 233, 63],
+    'aromantic': [71, 149, 255, 249, 233],
+    'agender': [233, 251, 255, 149, 255, 251, 233],
+    'asexual': [233, 233, 242, 242, 255, 255, 54, 54],
+    'graysexual': [54, 242, 255, 242, 54],
+}
+
+def color256(col, bg_fg):
+    
+    # Hacky alias around manually typing out escape codes every time 
+    return f'\033[{48 if bg_fg == "bg" else 38};5;{col}m'
+
+def draw_info(flag_name):
+    box = ' '
+    width = 20
+
+    flag = flags[flag_name]
+    curr_row = 0
+
+    # Make sure that the row color is different to the color of the hostname
+    row_color = color256(flag[1] if flag[0] != flag[1] else flag[2], "fg")
+
+    reset = '\033[0m\033[39m'
+
+    print()
+    for row in flag:
+        if row != 'P':
+            print(f'{color256(row, "bg")}{box * width}\033[49m')
+        else:
+            # Print just the info, along with the padding for the box
+            print(f'{box * width}\033[49m')
+            
+        curr_row += 1
+
+    print()
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-f', '--flag',     help='Displays the chosen FLAG')
+    parser.add_argument('-c', '--choose',   help='Choose a flag at random from this list')
+    parser.add_argument('-l', '--list',     action='store_true', help='Lists all the flags')
+
+    args = parser.parse_args()
+
+    if args.flag:
+        draw_info(args.flag)
+    if args.choose:
+        # Choose a flag at random from a list of comma-seperated flags
+        flag_choices = args.choose.split(',')
+        draw_info(random.choice(flag_choices))
+    if args.list:
+        # List out all the available flags
+        print('Available flags:')
+        print(', '.join(flags))
+    
+
+
+if __name__ == '__main__':
+    main()

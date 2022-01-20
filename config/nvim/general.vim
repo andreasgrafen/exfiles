@@ -20,7 +20,7 @@ set cursorline
 set rnu
 
 set termguicolors
-colorscheme nord
+colorscheme catppuccin
 
 
 " K E Y B I N D S
@@ -61,4 +61,4 @@ autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 
 let g:limelight_conceal_ctermfg = 240
-let g:limelight_conceal_guifg = '#4C566A'
+let g:limelight_conceal_guifg = '#6E6C7E'

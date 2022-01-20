@@ -6,9 +6,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Auto Bracket Pairs
   Plug 'jiangmiao/auto-pairs'
 
-  " Auto Completion
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
   " Language Support
 
   " Zen Mode
@@ -17,6 +14,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
   " Colours
   Plug 'arcticicestudio/nord-vim'
-  Plug 'ghifarit53/tokyonight-vim'
+  Plug 'catppuccin/nvim'
 
 call plug#end()

@@ -1,7 +1,7 @@
 [user]
 	name = Andreas Grafen
 	email = andreas@grafen.info
-	signingkey = 9D7DDCF3DE26A0F3
+	signingkey = B8CDE2D1
 
 [github]
   user = andreasgrafen
@@ -109,3 +109,7 @@
 	defaultBranch = main
 [commit]
 	gpgsign = true
+[gpg]
+	program = /usr/local/bin/gpg
+[pull]
+	rebase = true

@@ -1,40 +1,59 @@
-# general
+
+# ----- A L I A S E S ----- #
+# ------------------------- #
+
+
+# ----- general ----- #
+
 alias _="sudo"
 alias please="sudo"
-alias reload='exec ${SHELL} -l'
-alias mkdir='mkdir -pv'
-alias rtmp='rm -rf ~/tmp; mkdir ~/tmp'
+
 alias ping='ping -c 5'
-alias c='clear'
-alias ca='cd ~; clear'
-alias rr="rm -rf"
+
+alias reload='exec ${SHELL} -l'
 alias hg='history | grep --color="auto"'
+
+alias c='clear && echo -e "\e[31m●\e[0m \e[33m●\e[0m \e[32m●\e[0m \e[36m●\e[0m \e[34m●\e[0m \e[35m●\e[0m" && echo ""'
+alias ca='cd ~; clear && echo -e "\e[31m●\e[0m \e[33m●\e[0m \e[32m●\e[0m \e[36m●\e[0m \e[34m●\e[0m \e[35m●\e[0m" && echo ""'
+
+alias mkdir='mkdir -pv'
+alias rr="rm -rf"
+alias rtmp='rm -rf ~/tmp; mkdir ~/tmp'
+
 alias vi='nvim'
 alias vim='nvim'
 
-
-# Directory listing/traversal
-LS_COLORS=$(is-supported "ls --color" --color -G)
-LS_TIMESTYLEISO=$(is-supported "ls --time-style=long-iso" --time-style=long-iso)
-LS_GROUPDIRSFIRST=$(is-supported "ls --group-directories-first" --group-directories-first)
-alias l="ls -lahA $LS_COLORS $LS_TIMESTYLEISO $LS_GROUPDIRSFIRST"
-alias ll="ls -lA $LS_COLORS"
-alias lt="ls -lhAtr $LS_COLORS $LS_TIMESTYLEISO $LS_GROUPDIRSFIRST"
-alias ld="ls -ld $LS_COLORS */"
-unset LS_COLORS LS_TIMESTYLEISO LS_GROUPDIRSFIRST
+alias pride='prideflag -c gay,bisexual,pansexual,nonbinary,trans,genderfluid,asexual'
 
 
-# navigation
+
+# ----- directory listing/traversal ----- #
+
+# LS_COLORS=$(is-supported "ls --color" --color -G)
+# LS_TIMESTYLEISO=$(is-supported "ls --time-style=long-iso" --time-style=long-iso)
+# LS_GROUPDIRSFIRST=$(is-supported "ls --group-directories-first" --group-directories-first)
+# alias l="ls -lhA $LS_COLORS $LS_TIMESTYLEISO $LS_GROUPDIRSFIRST"
+# alias ll="ls -lA $LS_COLORS"
+# alias lt="ls -lhAtr $LS_COLORS $LS_TIMESTYLEISO $LS_GROUPDIRSFIRST"
+# alias ld="ls -ld $LS_COLORS */"
+# unset LS_COLORS LS_TIMESTYLEISO LS_GROUPDIRSFIRST
+
+alias l="exa -lah --no-time --group-directories-first"
+alias ld="exa -lahD --no-time"
+
 alias ~='cd ~'
 alias cs='cd'
 alias ..='cd ..'
+
 alias tree="tree -A"
 alias treed="tree -d"
 alias tree1="tree -d -L 1"
 alias tree2="tree -d -L 2"
 
 
-# npm
+
+# ----- npm ----- #
+
 alias ni="npm install"
 alias nu="npm uninstall"
 alias nup="npm update"
@@ -42,17 +61,20 @@ alias nri="rm -r node_modules && npm install"
 alias ncd="npm-check -su"
 
 
-# git
+
+# ----- git ----- #
+
 alias clone='git clone $1'
 alias gc='git commit -m'
 alias ga='git add .'
-alias ch='history | grep --color="auto" "git commit"'
+alias gch='history | grep --color="auto" "git commit"'
 
 
-# Network
+
+# ----- network ----- #
+
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ipl="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
-
 
 # Request using GET, POST, etc. method
 for METHOD in GET HEAD POST PUT DELETE TRACE OPTIONS; do
@@ -61,8 +83,17 @@ done
 unset METHOD
 
 
-# Miscellaneous
-alias hosts="sudo $EDITOR /etc/hosts"
+
+# ----- misc ----- #
+
 alias quit="exit"
 alias week="date +%V"
 alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
+alias wttr="curl https://wttr.in/leipzig?0"
+
+
+
+# ----- kitty specific ----- #
+
+alias icat="kitty +kitten icat --align left"
+alias ssh="kitty +kitten ssh"

@@ -44,4 +44,4 @@ git -C $PROJECT_DIR remote add origin git@gitlab.unseen.ninja:$GL_USER/$PROJECT_
 
 git add .
 git commit -m "initial"
-git push -u origin master
+git push -u origin main

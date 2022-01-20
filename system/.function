@@ -50,12 +50,6 @@ meteo() {
   curl -s "$LOCALE.wttr.in/$LOCATION"
 }
 
-# Markdown
-
-md() {
-  pandoc $1 | lynx -stdin -dump
-}
-
 
 # search files with a given name
 

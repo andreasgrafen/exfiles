@@ -20,7 +20,7 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 
 # Set language and text formats
 defaults write NSGlobalDomain AppleLanguages -array "en" "de"
-defaults write NSGlobalDomain AppleLocale -string "en_US@currency=EUR"
+defaults write NSGlobalDomain AppleLocale -string "en_GB@currency=EUR"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
 
@@ -138,8 +138,8 @@ defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-# Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+# Save screenshots to the Screenshots folder
+defaults write com.apple.screencapture location -string "${HOME}/Pictures/Screenshots"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
@@ -326,11 +326,12 @@ defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
 # Create custom folderstructure                                               #
 ###############################################################################
 
+mkdir ~/Pictures/Screenshots
 mkdir ~/Projects
 mkdir ~/Resources
 mkdir ~/Development
-mkdir ~/Development/Web
-mkdir ~/Development/Node
+mkdir ~/Downloads/Web
+mkdir ~/Downloads/Messenger
 
 ###############################################################################
 # Kill affected applications                                                  #

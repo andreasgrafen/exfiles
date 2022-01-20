@@ -1,0 +1,143 @@
+{
+  "entries": {
+    "tap": {
+      "homebrew/cask": {
+        "revision": "d0a039f23ca4d76f66891d381824dee05a1a09ab"
+      },
+      "homebrew/cask-drivers": {
+        "revision": "f97fe795b050024c91c6e0410ca581f746c7681b"
+      },
+      "homebrew/cask-fonts": {
+        "revision": "d29ef2e6ac83f75847a9a863f6042756795d8865"
+      },
+      "homebrew/cask-versions": {
+        "revision": "1cda32d3316afcb55b0469aebcfe2e52e7c4f13b"
+      },
+      "dteoh/sqa": {
+        "revision": "cb1292b25fcc047971516e8ca79bef6c3be0b710"
+      }
+    },
+    "cask": {
+      "font-fira-code": {
+        "version": "5.2",
+        "options": {
+          "full_name": "font-fira-code"
+        }
+      },
+      "alacritty": {
+        "version": "0.8.0",
+        "options": {
+          "full_name": "alacritty"
+        }
+      },
+      "alfred": {
+        "version": "4.3.4,1229",
+        "options": {
+          "full_name": "alfred"
+        }
+      },
+      "balenaetcher": {
+        "version": "1.5.120",
+        "options": {
+          "full_name": "balenaetcher"
+        }
+      },
+      "buttercup": {
+        "version": "2.7.1",
+        "options": {
+          "full_name": "buttercup"
+        }
+      },
+      "discord": {
+        "version": "0.0.263",
+        "options": {
+          "full_name": "discord"
+        }
+      },
+      "element": {
+        "version": "1.7.29",
+        "options": {
+          "full_name": "element"
+        }
+      },
+      "firefox": {
+        "version": "89.0",
+        "options": {
+          "full_name": "firefox"
+        }
+      },
+      "forklift": {
+        "version": "3.5.2,214",
+        "options": {
+          "full_name": "forklift"
+        }
+      },
+      "google-chrome": {
+        "version": "91.0.4472.77",
+        "options": {
+          "full_name": "google-chrome"
+        }
+      },
+      "nextcloud": {
+        "version": "3.2.2",
+        "options": {
+          "full_name": "nextcloud"
+        }
+      },
+      "microsoft-office": {
+        "version": "16.49.21050901",
+        "options": {
+          "full_name": "microsoft-office"
+        }
+      },
+      "slowquitapps": {
+        "version": "0.8.1",
+        "options": {
+          "full_name": "slowquitapps"
+        }
+      },
+      "spotify": {
+        "version": "1.1.60.672.g6ad9c215,1.1.60.672.g6ad9c215-15",
+        "options": {
+          "full_name": "spotify"
+        }
+      },
+      "syncthing": {
+        "version": "1.16.1-2",
+        "options": {
+          "full_name": "syncthing"
+        }
+      },
+      "typeface": {
+        "version": "3.0.1,2785",
+        "options": {
+          "full_name": "typeface"
+        }
+      },
+      "ukelele": {
+        "version": "3.5.2,343",
+        "options": {
+          "full_name": "ukelele"
+        }
+      },
+      "visual-studio-code": {
+        "version": "1.56.2",
+        "options": {
+          "full_name": "visual-studio-code"
+        }
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "catalina": {
+        "HOMEBREW_VERSION": "3.1.9",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "0f5df02c584ee57cecf33c214d9588d35ee1fedd",
+        "CLT": "12.4.0.0.1.1610135815",
+        "Xcode": "12.4",
+        "macOS": "10.15.7"
+      }
+    }
+  }
+}
