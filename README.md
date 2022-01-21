@@ -19,7 +19,7 @@ On a sparkling fresh installation of macOS:
 The Xcode Command Line Tools includes `git` and `make` (not available on stock macOS).
 Then, install this repo with `curl` available:
 
-    bash -c "`curl -fsSL https://gitlab.unseen.ninja/andreasgrafen/dotfiles/raw/master/bootstrap.sh`"
+    bash -c "`curl -fsSL https://raw.githubusercontent.com/andreasgrafen/dotfiles/master/bootstrap.sh`"
 
 This will clone (using `git`), or download (using `curl` or `wget`), this repo to `~/.dotfiles`.
 
@@ -32,11 +32,6 @@ Use the [Makefile](./Makefile) to install everything [listed above](#package-ove
 
 - `dotfiles dock` (set [Dock items](./macos/dock.sh))
 - `dotfiles macos` (set [System defaults](./macos/defaults.sh))
-- `dotfiles atom` (set [Atom defaults](./atom))
-- Mackup
-  - Log in to Dropbox (and wait until synced)
-  - `ln -s ~/.config/mackup/.mackup.cfg ~` (until [#632](https://github.com/lra/mackup/pull/632) is fixed)
-  - `mackup restore`
 
 ## Credits
 
