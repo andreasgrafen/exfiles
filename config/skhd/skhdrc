@@ -1,1 +1,6 @@
 cmd + ctrl - n : nightlight toggle
+
+cmd + ctrl - h : yabai -m window --swap north
+cmd + ctrl - j : yabai -m window --swap west
+cmd + ctrl - k : yabai -m window --swap south
+cmd + ctrl - l : yabai -m window --swap east
