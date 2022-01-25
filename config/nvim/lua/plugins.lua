@@ -11,12 +11,9 @@ return require('packer').startup(
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
-
-    -- Editor Config
     use 'editorconfig/editorconfig-vim'
-
-    -- Auto Bracket Pairs
-    use 'jiangmiao/auto-pairs'
+    use 'scrooloose/nerdcommenter'
+    -- use 'jiangmiao/auto-pairs'
 
     -- Zen Mode
     use 'junegunn/goyo.vim'

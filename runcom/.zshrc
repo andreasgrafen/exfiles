@@ -15,7 +15,7 @@ export ZSH="/Users/ag/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="awesomepanda"
 # ZSH_THEME="wedisagree"
 
 # Set list of themes to pick from when loading at random
@@ -141,7 +141,7 @@ export GPG_TTY=$(tty)
 
 # Source the dotfiles (order matters)
 
-for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,alias,grep,nvm,custom}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,alias,grep,nvm,custom,pfetch}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
@@ -166,3 +166,8 @@ fi
 export DOTFILES_DIR DOTFILES_EXTRA_DIR
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+
+echo ""
+pfetch
+echo ""

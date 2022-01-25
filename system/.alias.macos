@@ -61,6 +61,7 @@ alias sysupdate='sudo softwareupdate -i -a; mas upgrade; brew update; brew upgra
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume output volume 100'"
 alias genpass="genpass.py -s | pbcopy"
+alias fetch="echo ''; pfetch; echo ''"
 
 alias firefox="open -a /Applications/Firefox.app/"
 alias chrome="open -a /Applications/Google\ Chrome.app"

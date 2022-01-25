@@ -19,6 +19,7 @@ prepend-path "/usr/sbin"
 prepend-path "/usr/local/sbin"
 prepend-path "/usr/local/Cellar/openjdk/17/bin"
 prepend-path "/Library/Frameworks/Mono.framework/Versions/Current/bin"
+prepend-path "/Users/ag/.spicetify"
 
 # Remove duplicates (preserving prepended items)
 # Source: http://unix.stackexchange.com/a/40755

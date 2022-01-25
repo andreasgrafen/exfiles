@@ -11,13 +11,19 @@ set wildmenu
 set noerrorbells
 set tabstop=2 softtabstop=2
 set shiftwidth=2
-set expandtab
 set smartindent
 set nowrap
 set smartcase
 set noswapfile
 set cursorline
+set number
 set rnu
+
+set list
+set listchars=tab:→\ ,space:·
+
+autocmd InsertEnter * :set norelativenumber
+autocmd InsertLeave * :set rnu
 
 set termguicolors
 colorscheme catppuccin
@@ -26,7 +32,7 @@ colorscheme catppuccin
 " K E Y B I N D S
 " ===============
 
-let mapleader=','
+let mapleader=' '
 
 map <C-n> :source ~/.config/nvim/init.vim<CR>
 
@@ -61,4 +67,4 @@ autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 
 let g:limelight_conceal_ctermfg = 240
-let g:limelight_conceal_guifg = '#6E6C7E'
+let g:limelight_conceal_guifg = '#575268'
