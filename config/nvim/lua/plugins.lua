@@ -20,7 +20,7 @@ return require('packer').startup(
     use 'junegunn/limelight.vim'
 
     -- Colours
-    use({ "catppuccin/nvim", as = "catppuccin" })
+    use({ "catppuccin/nvim", as = "catppuccin", branch = "dev" })
 
   end
 )

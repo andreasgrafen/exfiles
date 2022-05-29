@@ -69,11 +69,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["auto-pairs"] = {
-    loaded = true,
-    path = "/Users/ag/.local/share/nvim/site/pack/packer/start/auto-pairs",
-    url = "https://github.com/jiangmiao/auto-pairs"
-  },
   catppuccin = {
     loaded = true,
     path = "/Users/ag/.local/share/nvim/site/pack/packer/start/catppuccin",
@@ -99,6 +94,11 @@ _G.packer_plugins = {
     path = "/Users/ag/.local/share/nvim/site/pack/packer/start/limelight.vim",
     url = "https://github.com/junegunn/limelight.vim"
   },
+  nerdcommenter = {
+    loaded = true,
+    path = "/Users/ag/.local/share/nvim/site/pack/packer/start/nerdcommenter",
+    url = "https://github.com/scrooloose/nerdcommenter"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/ag/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -117,5 +117,6 @@ if should_profile then save_profiles() end
 end)
 
 if not no_errors then
+  error_msg = error_msg:gsub('"', '\\"')
   vim.api.nvim_command('echohl ErrorMsg | echom "Error in packer_compiled: '..error_msg..'" | echom "Please check your config for correctness" | echohl None')
 end

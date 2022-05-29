@@ -37,7 +37,7 @@ let mapleader=' '
 map <C-n> :source ~/.config/nvim/init.vim<CR>
 
 xnoremap K :move '<-2<CR>gv-gv
-xnoremap L :move '>+1<CR>gv-gv  
+xnoremap L :move '>+1<CR>gv-gv
 
 noremap <LEADER>w :w<CR>
 noremap <LEADER>q :q<CR>
@@ -67,4 +67,4 @@ autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 
 let g:limelight_conceal_ctermfg = 240
-let g:limelight_conceal_guifg = '#575268'
+let g:limelight_conceal_guifg = '#484C64'

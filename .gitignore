@@ -1,2 +1,4 @@
 system/.custom
 config/nvim/autoload
+config/kitty/ssh.conf
+ubersicht/
