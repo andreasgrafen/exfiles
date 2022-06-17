@@ -43,8 +43,8 @@ noremap <LEADER>w :w<CR>
 noremap <LEADER>q :q<CR>
 noremap <LEADER>Q :q!<CR>
 
-nnoremap o o<Esc>
-nnoremap O O<Esc>
+" nnoremap o o<Esc>
+" nnoremap O O<Esc>
 
 
 " S P L I T S
