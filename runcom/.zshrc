@@ -141,7 +141,7 @@ export GPG_TTY=$(tty)
 
 # Source the dotfiles (order matters)
 
-for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,alias,grep,nvm,custom,pfetch}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,alias,grep,nvm,custom,pfetch,exa}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 

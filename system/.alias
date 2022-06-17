@@ -38,8 +38,9 @@ alias pride='prideflag -c gay,bisexual,pansexual,nonbinary,trans,genderfluid,ase
 # alias ld="ls -ld $LS_COLORS */"
 # unset LS_COLORS LS_TIMESTYLEISO LS_GROUPDIRSFIRST
 
-alias l="exa -lah --no-time --group-directories-first"
-alias ld="exa -lahD --no-time"
+alias l="exa -lah --no-time --icons --git --group-directories-first --no-permissions"
+alias ld="exa -lahD --no-time --icons --git --no-permissions"
+alias lg="EXA_ICON_SPACING=1 exa -a --grid --icons"
 
 alias ~='cd ~'
 alias cs='cd'
