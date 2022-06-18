@@ -167,6 +167,16 @@ export DOTFILES_DIR DOTFILES_EXTRA_DIR
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# PROMPT_COMMAND='echo -ne "$(basename ${PWD})"'
+
+# oh-my-zsh seems to enable this by default, not desired for
+# workflow of controlling terminal title.
+DISABLE_AUTO_TITLE="true"
+
+function precmd() {
+  echo -en "\e]2;$(basename "$PWD")\a"
+}
+
 
 echo ""
 pfetch
